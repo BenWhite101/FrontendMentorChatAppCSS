@@ -34,8 +34,8 @@ main .container .grid .left #phone .phone-inner {
 }
 main .container .grid .left #phone .phone-inner .phone-screen {
   display: grid;
-  grid-template-columns: 100px auto  70px;
-  border-radius: 40px;
+  grid-template-rows: 100px auto  70px;
+  border-radius: 30px;
   overflow: hidden;
   height: 100%;
   background-color: hsl(270, 20%, 96%);
