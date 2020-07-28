@@ -1,8 +1,53 @@
 @purple: hsl(264, 100%, 61%);
 @pink: hsl(293, 100%, 63%);
-@main-gradient: linear-gradient(0deg, @purple, @pink);
+@main-gradient: linear-gradient(90deg, @purple, @pink);
 @main-gradient-45: linear-gradient(45deg, @purple, @pink);
 
+body,html{
+    width:100%;
+    height: 100%;
+}
 body{
-    background: @main-gradient;
+    
+}
+
+
+main{
+    display: flex;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+
+    .container{
+        .grid{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: 990px;
+            .left{
+
+                    #phone{
+                        background: white;
+                        border-radius: 10px;
+                        width:370px;
+                        height:690px;
+                        .phone-inner{
+                            .phone-screen{
+
+                                .phone-topbar{
+                                    background: @main-gradient;
+                                }
+                                .phone-message-box{
+
+                                }
+
+                            }
+                        }
+                    }
+
+            }
+            .right{
+
+            }
+        }
+    }
 }
