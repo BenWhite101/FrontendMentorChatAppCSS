@@ -44,3 +44,25 @@ main .container .grid .left #phone .phone-inner .phone-screen .phone-topbar {
   background: linear-gradient(90deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
   height: 100px;
 }
+main .container .grid .left #phone .phone-inner .phone-screen .phone-message-box {
+  padding: 15px;
+  overflow: hidden;
+}
+main .container .grid .left #phone .phone-inner .phone-screen .phone-message-box #messages {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  flex-flow: column-reverse;
+  overflow: hidden;
+}
+main .container .grid .left #phone .phone-inner .phone-screen .phone-message-box #messages .message {
+  padding: 10px 10px;
+  border-radius: 10px 10px 10px 2px;
+  max-width: 180px;
+}
+main .container .grid .left #phone .phone-inner .phone-screen .phone-message-box #messages .message.other {
+  background: tomato;
+}
+main .container .grid .left #phone .phone-inner .phone-screen .phone-message-box #messages .message.user {
+  background: white;
+}
